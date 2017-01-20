@@ -1,0 +1,103 @@
+html{
+    background: url(Images/bgimage.jpg) no-repeat center center fixed;
+}
+
+html, body{
+	margin:0px;
+}
+
+#content{
+	width: 100%;
+	padding: 0px 50px;
+	box-sizing: border-box;
+	color: #fff;
+	position: absolute;
+	top: 60%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: row;
+}
+
+#content #right{
+	width: 350px;
+	text-align: center;
+}
+
+#content #left{
+	width: calc(100% - 400px);
+	text-align: center;
+}
+
+#content #left h1{
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 54px;
+	font-weight: 300;
+	letter-spacing: 8px
+}
+
+#content #left p{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 22px;
+	line-height: 42px;
+	margin-bottom: 50px
+}
+
+#content #left span{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-weight: 600; 
+}
+
+#content #right img#phones{
+	width: 100%;
+
+}
+
+button{
+	background: #1ABC9C;
+	border: none;
+	border-radius: 50px;
+	padding: 0px 20px;
+	width:238px; 
+	height: 50px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	color:#fff;
+	font-size: 18px;
+	font-weight:700;
+	margin-bottom: 20px
+}
+
+a{
+	color:#fff;
+	text-decoration: none;
+	transition: all .3s ease;
+}
+
+a:hover{
+	color:#1ABC9C;
+}
+.menu {
+	position: absolute;
+	top: 45px;
+	right:100px;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 700;
+
+}
+
+.menu ul{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+
+.menu ul li{
+	margin-right: 40px;
+}
+
+#logo{
+	position: absolute;
+	top: 40px;
+	left: 100px;
+}
