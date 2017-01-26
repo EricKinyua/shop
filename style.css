@@ -354,4 +354,63 @@ a:hover{
     height: auto;
     padding: 0px 50px;
 }
+i.fa{
+    font-size: 99px;
+    color: #1ABC9C;
+}
+#pros{
+    padding: 100px 0px;
+    width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+#pros div.adv{
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    margin: 20px 0px;
+}
+
+#pros div.adv div{
+    margin: 0px 10px;
+}
+
+#pros div.adv div p{
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(0,0,0,.60);
+}
+
+#contact h1{
+    text-align: center
+}
+#contact p{
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#contact #box{
+    text-align: center;
+}
+footer .foot{
+    padding: 100px 0px;
+    width: 1000px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif; 
+}
+.foot i.fa{
+    font-size: 47px;
+}
+.foot .cont{
+    width: 170px;
+    text-align: center;
+    
+}
 
