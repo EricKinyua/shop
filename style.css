@@ -4,16 +4,35 @@ header{
     overflow: hidden;
 }
 
-#bgimage{
-    height: 100%;
+
+body #headerSection{
+    max-width: 100%;
+    overflow: hidden;
 }
-header img#bg{
+#bgimage{
     width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: -999;
+}
+header #bgimage img{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    object-fit:cover;
 }
 
 h1, h2, h3, h5{
     color: #1ABC9C;
     font-family:'Open Sans Condensed', sans-serif;
+    margin: 0px;
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
 }
 html, body{
 	margin:0px;
@@ -58,7 +77,7 @@ html, body{
 #content #left span{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
-	font-weight: 600; 
+	font-weight: 600;
 }
 
 #content #right img#phones{
@@ -66,24 +85,22 @@ html, body{
 
 }
 
-button{
-	background: #1ABC9C;
-	border: none;
-	border-radius: 50px;
-	padding: 0px 20px;
-	width:238px; 
-	height: 50px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	color:#fff;
-	font-size: 18px;
-	font-weight:700;
-	margin-bottom: 20px
+.featureSection, #pros {
+    background: #fff;
+    width: 100%;
+}
+
+.sectionHeader{
+    padding: 30px;
+    background: #fff
+
 }
 
 a{
 	color:#fff;
 	text-decoration: none;
 	transition: all .3s ease;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
 
 a:hover{
@@ -110,7 +127,7 @@ a:hover{
 }
 
 #logo{
-	position: absolute;
+	position: relative;
 	top: 40px;
 	left: 100px;
 }
@@ -132,7 +149,7 @@ a:hover{
 	border: none;
 	border-radius: 50px;
 	padding: 0px 20px;
-	width:103px; 
+	width:103px;
 	height: 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color:#fff;
@@ -146,7 +163,7 @@ a:hover{
     height: 100vh;
     display: flex;
     flex-direction: row;
-    
+
 }
 
 .features .info{
@@ -175,12 +192,6 @@ header{
     overflow: hidden;
 }
 
-#bgimage{
-    height: 100%;
-}
-header img#bg{
-    width: 100%;
-}
 
 h1, h2, h3, h5{
     color: #1ABC9C;
@@ -230,7 +241,7 @@ html, body{
 #content #left span{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
-	font-weight: 600; 
+	font-weight: 600;
 }
 
 #content #right img#phones{
@@ -238,20 +249,7 @@ html, body{
 
 }
 
-button{
-	background: #1ABC9C;
-	border: none;
-	border-radius: 50px;
-	padding: 0px 20px;
-	width:238px; 
-	height: 50px;
-	font-family: 'Open Sans Condensed', sans-serif;
-	color:#fff;
-	font-size: 18px;
-	font-weight:700;
-	margin-bottom: 20px
-}
-
+ 
 a{
 	color:#fff;
 	text-decoration: none;
@@ -304,7 +302,7 @@ a:hover{
 	border: none;
 	border-radius: 50px;
 	padding: 0px 20px;
-	width:103px; 
+	width:103px;
 	height: 30px;
 	font-family: 'Open Sans Condensed', sans-serif;
 	color:#fff;
@@ -320,7 +318,7 @@ a:hover{
     flex-direction: row;
     padding-top: 100px;
     box-sizing: border-box;
-    
+
 }
 
 .features .info{
@@ -350,29 +348,41 @@ a:hover{
     padding-right: 0px;
 }
 .features img {
-    width:400px;
+    width:350px;
     height: auto;
     padding: 0px 50px;
+    margin-left: 50px
 }
-i.fa{
+.adv i.fa{
     font-size: 99px;
     color: #1ABC9C;
 }
 #pros{
     padding: 100px 0px;
+    width: 100%;
+    margin: 0px auto;
+    display: flex;
+
+}
+
+.prosWrapper{
     width: 1000px;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    
 }
 
 #pros div.adv{
     width: 500px;
     display: flex;
     flex-direction: row;
-    margin: 20px 0px;
+    margin: 40px 0px;
+}
+
+.proIcons{
+    width: 200px;
+    text-align: center
 }
 
 #pros div.adv div{
@@ -383,34 +393,505 @@ i.fa{
     font-family: 'Open Sans', sans-serif;
     color: rgba(0,0,0,.60);
 }
-
+#contact {
+  position: relative;
+  overflow: hidden;
+}
+#contact .parallax-bg{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    z-index: -1;
+    padding-top: 900px;
+}
+.parallax-bg img{
+    width: 100%;
+}
 #contact h1{
-    text-align: center
+    text-align: center;
+    font-size: 36px
 }
 #contact p{
     text-align: center;
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: rgba(0,0,0,0.5);
+    font-weight:600;
 }
 
 #contact #box{
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    margin: 0px auto;
+    padding: 50px 0px;
+}
+
+#box .inputs {
+    border-bottom: 1px solid #1abc9c;
+    width: 450px;
+    margin: 10px auto;
+    font-size: 14px;
+    font-weight: 700;
+    color: white;
+}
+
+#box #contactSubmit{
+    margin: 30px auto 0px auto;
+}
+
+#box #message{
+    height: 200px;
+    resize: none;
+}
+
+footer{
+    background: #fff;
 }
 footer .foot{
-    padding: 100px 0px;
+    padding: 50px 0px;
     width: 1000px;
     margin: 0px auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    font-family: 'Open Sans', sans-serif; 
+    font-family: 'Open Sans', sans-serif;
 }
 .foot i.fa{
     font-size: 47px;
+    color: #1abc9c;
+}
+
+.foot{
+    font-family: 'Open Sans', sans-serif;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(0,0,0,0.7)
 }
 .foot .cont{
     width: 170px;
     text-align: center;
-    
+
 }
+
+#login{
+	position: absolute;
+	width: 550px; height: 350px;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+	background: #fff;
+	text-align: center;
+  -webkit-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.25);
+  -moz-box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.25);
+  box-shadow: 0px 0px 25px 3px rgba(0,0,0,0.25);
+    border-radius:20px;
+    overflow: hidden;
+}
+
+#login h3{
+	color:#fff;
+	font-size: 30px;
+	font-family: 'Open Sans Condensed', sans-serif;
+    width: 100%;
+    background: #1abc9c;
+    padding: 20px 0px;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+#login span#close{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	color:#1abc92;
+}
+
+
+#login p#formMessage{
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+    font-size: 14px;
+    margin: 0px;
+}
+
+.error{
+    color: #c0392b;
+}
+
+
+.success{
+    color: #1abc9c;
+}
+
+#login div{
+	width: 300px;
+	border: 2px solid #1abc92;
+    border-radius: 10px;
+	margin: 10px auto;
+	padding:0px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+}
+#login i#closeLogin{
+	color: #fff;
+
+}
+
+#login i#closeLogin:hover, #loginBtn:hover{
+    cursor: pointer;
+}
+
+#login i{
+    color: #fff;
+    background-color: #1abc9c;
+    padding: 10px;
+}
+
+.inputs{
+	border: none;
+	width: 270px;
+	height: 40px;
+	margin-left: 10px;
+    padding-left: 10px;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	color: rgba(0,0,0,0.60);
+	background: none;
+}
+
+.button{
+    width: 100px;
+	height: 30px;
+	border: none;
+	border-radius: 50px;
+	background: #1ABC9C;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	margin-top: 50px;
+}
+
+.button:hover{
+    border: 1px solid #fff;
+}
+
+
+.realFooter{
+    width: 100%;
+    height: 100px;
+    padding: 40px 0px 0px 0px;
+    box-sizing: border-box;
+    background: #8398A7;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between
+}
+
+.footerLinks{
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+.footerLinks a{
+    margin-right: 40px;
+}
+.getAppBtn{
+    width: auto;
+    height: 30px;
+    margin-right: 50px;
+}
+#appBtn {
+    margin: 0px;
+}
+
+#phone-menu{
+    display: none;
+}
+
+
+/*  REGISTER  SIDE BAR STYLE */
+#register{
+    width: 500px;
+    margin-right: -500px;
+    height: 100vh;
+    position: fixed;
+    background:#fff;
+    top: 0px;
+    right: 0px;
+    display: none;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+
+#register h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 50px;
+}
+
+#register div{
+    border-bottom: 1px solid #1abc9c;
+    margin-bottom: 20px;
+}
+
+#register div input{
+    margin: 5px;
+    transition: margin .3s ease;
+    outline: none;
+}
+
+#register div i{
+    color:#1abc9c;
+}
+
+#register div input:focus{
+    margin-bottom: 30px;
+    transition: margin .3s ease;
+    color: #1abc9c;
+}
+
+#register #regClose{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+
+
+
+/* media queries*/
+
+
+@media (max-width:414px){
+    #phone-menu{
+        display: block;
+    }
+
+}
+
+
+/* content page css */
+#container{
+    width:100%;
+    max-width: 1400px;
+    margin: 0px auto;
+}
+section#header{
+    width: 100%;
+    height: 100px;
+    background-color: #f8f8f8;
+    position: fixed;
+    z-index: 99999;
+}
+
+section#body{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    position: relative;
+    top: 100px;
+}
+
+#center{
+    position: relative;
+    left: 40px;
+    width: 900px;
+}
+
+#slider{
+    background-image: url('Images/supa.jpg');
+    background-size: cover;
+    height: 354px;
+    width: 900px;
+    margin: 30px 0px;
+}
+#sidebar{
+    width:300px;
+}
+#nav{
+    width: 50px;
+    height: 100%;
+    position: fixed;
+    top: 100px;
+    background-color: #1abc9c;
+    color: #fff;
+}
+#nav div{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    padding-top: 15px;
+    box-sizing: border-box;
+}
+
+#categories{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin: 20px 0px;
+}  
+
+#categories div{
+    width: 100px;
+    height: 130px;
+}
+
+#categories div .img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+#categories div .img img{
+    width:200%;   
+}
+
+
+
+#products #title{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+#title form input{
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+}
+
+#products #goods{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#goods .goods{
+    width: 150px;
+    margin: 10px 10px;
+}
+
+.goods .goodsImg{
+    width:150px;
+    height:150px;
+    border: 1px solid rgba(0,0,0,0.2);
+}
+
+.goods .goodsImg img{
+    width:100%;
+}
+
+.goods .goodsInfo form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.goods .goodsInfo form p{
+    margin: 0px
+}
+.goodsInfo form input{
+    height: 20px;
+    border: none;
+}
+
+.goodsInfo form #quantity{
+    width: 40px;
+}
+
+.goodsInfo form button{
+    background: none;
+    border: none;
+    color:#95989A;
+}
+
+#sidebar{
+    background: #EBEEF1;
+}
+#sidebar #head{
+    background-color: #1abc9c;
+    color:#fff;
+    text-align: center;
+}
+
+#sidebar #head h2{
+    color: #fff;
+}
+#Cart img{
+    width: 72px;
+    height: 72px;
+}
+
+.incart{
+    position: relative;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.incart i{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.incart form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.incart form input{
+    height: 20px;
+}
+
+.incart p{
+    margin: 0px;
+}
+
+#total button{
+    width: 90%;
+	height: 40px;
+	border: none;
+	border-radius: 50px;
+	background: #1ABC9C;
+	color: #fff;
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-size: 14px;
+	font-weight: 700;
+	margin: 20px auto;
+}
+
+#sale{
+    width: calc(100%-72px);
+}
+    
+
+
+
+
+
 

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+  <title>shop</title>
+        <link rel="icon" href="Images/favicon.png" type="image/png">
+        
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="js/jquery.validate.js"></script>
+        <script src="js/effects.js"></script>    
+  <body>
+    <div id="container">
+      <section id="header"></section>
+      <section id="body">
+        <div id="nav">
+                    <div><a><i class="fa fa-home"></i></a></div>
+                    <div><a><i class="fa fa-check"></i></a></div>
+                    <div><a><i class="fa fa-search"></i></a></div>
+                    <div><a><i class="fa fa-file-text"></i></a></div>
+                    <div><a><i class="fa fa-user"></i></a></div>
+        </div>
+        <div id="center">
+          <div id="slider">
+                
+        </div>
+          <div id="categories">
+                        <div>
+                          <div class="img"><img src="Images/fresh.jpg"></div>
+                          <p>Fresh Produce</p>
+                        </div>
+                        <div>
+                          <div class="img"><img src="Images/snacks.jpg"></div>
+                          <p>Snacks</p>
+                        </div>
+                        <div>
+                          <div class="img"><img src="Images/fast.jpg"></div>
+                          <p>Fast Foods</p>
+                        </div>
+                        <div>
+                          <div class="img"><img src="Images/fruits.jpg"></div>
+                          <p>Fruits</p>
+                        </div>
+                        <div>
+                          <div class="img"><img src="Images/bevs.jpg"></div>
+                          <p>Beverages</p>
+                        </div>
+                        <div>
+                          <div class="img"><img src="Images/toilets.jpg"></div>
+                          <p>Toiletries</p>
+                        </div>
+          </div>
+          <div id="products">
+            <div id="title">
+              <h2>Fruits</h2>
+              <div class="search">
+                <form>
+                  <input type="search" value="search" name="search" id="search">
+                    <button type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+              </div>
+            </div>
+            <div id="goods">
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/redApples.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Red Apples</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/greenApples.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Green Apples</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/wm.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Water Melon</p>
+                                <form>
+                                  <p>Ksh200</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/bananas.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Bananas</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/Oranges.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Oranges</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/grapes.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Grapes</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/pineapple.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Pineapples</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/avocado.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Avocados</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/plums.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Plums</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/blueberries.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Blueberries</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+            </div>
+          </div>
+        </div>
+        <div id="sidebar">
+          <div id="head">
+            <h2>Shopping Cart</h2>
+            <p>5 items - Ksh780</p>
+          </div>
+          <div id="Cart">
+                        <div class="incart"><i class="fa fa-close"></i><img src="Images/oranges.jpg">
+                          <div id="sale">
+                            <p>Oranges</p>
+
+                              <p>Ksh100</p>
+                            
+                          </div>
+                        </div>
+                        <div class="incart"><i class="fa fa-close"></i><img src="Images/milk.jpg">
+                          <div id="sale">
+                            <p>Milk - 500ml</p>
+
+                              <p>Ksh50</p>
+                            
+                          </div>
+                        </div>
+                        <div class="incart"><i class="fa fa-close"></i><img src="Images/coke.jpg">
+                          <div id="sale">
+                            <p>Cocacola</p>
+
+                              <p>Ksh150</p>
+                            
+                          </div>
+                        </div>
+                        <div class="incart"><i class="fa fa-close"></i><img src="Images/flour.jpg">
+                          <div id="sale">
+                            <p>Exe Flour</p>
+
+                              <p>Ksh180</p>
+                            
+                          </div>
+                        </div>
+                        <div class="incart"><i class="fa fa-close"></i><img src="Images/sugar.jpg">
+                          <div id="sale">
+                            <p>Mumias Sugar 2kg</p>
+                    
+                              <p>Ksh200</p>
+                            
+                          </div>
+                        
+          </div>
+          <div id="total">
+            <h2>Total: Ksh 780</h2>
+              
+            <input type="checkbox" name="saveList" id="saveList" value="save"> 
+              <span>Save to Shopping lists</span>
+            <button class="orderBtn btn" value="Make Order">
+                Make Order
+              </button>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
