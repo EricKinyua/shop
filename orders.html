@@ -1,0 +1,188 @@
+<!--<?php
+	if(!isset($_COOKIE['user'])) {
+		header('location: index.php');
+	}; 
+
+?>-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shop</title>
+    <link rel="icon" href="Images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/get.js"></script>
+    <script src="js/test.js"></script>
+		<script>
+			$(function() {
+				$("#home").removeClass('active');
+				$("#orderIcon").addClass('active');
+			})
+		</script>
+  </head>
+  <body>
+    <div id="container">
+      <section id="header"></section>
+      <section id="body">
+        <div id="nav">
+                    <div id="home"><a href="content.php"><i class="fa fa-home"></i></a></div>
+                    <div id="savedIcon"><a><i class="fa fa-check"></i></a></div>
+                    <div id="searchIcon"><a><i class="fa fa-search"></i></a></div>
+                    <div id="ordersIcon"><a><i class="fa fa-file-text"></i></a></div>
+                    <div id="profileIcon"><a href="profile.html"><i class="fa fa-user"></i></a></div>
+										<div id="lowerIcon"><a href="logout.php"><i class="fa fa-sign-out"></i></a></div>
+        </div>
+
+				<div id="templateWrapper">
+					<div id="leftO">
+                        <h2>My Orders</h2>
+                    
+                        
+                    </div>
+					<div id="rightO">
+                        <h2>Order #1</h2>
+                        <p>2/9/2017|pending</p>
+                        <div id="savedOrder">
+                                        <div id="goods">
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/redApples.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Red Apples</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/greenApples.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Green Apples</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/wm.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Water Melon</p>
+                                <form>
+                                  <p>Ksh200</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/bananas.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Bananas</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/Oranges.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Oranges</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/grapes.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Grapes</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/pineapple.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Pineapples</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/avocado.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Avocados</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/plums.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Plums</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="goods">
+                              <div class="goodsImg"><img src="Images/blueberries.jpg"></div>
+                              <div class="goodsInfo">
+                                <p>Blueberries</p>
+                                <form>
+                                  <p>Ksh30</p>
+                                  <input id="quantity" type="number" name="quantity" max="10" min="1">
+                                  <input type="hidden" name="goodsId" value="1">
+                                  <button class="addBtn" type="submit" id="addBtn" value=""><i class="fa fa-cart-plus"></i></button>
+                                </form>
+                              </div>
+                            </div>
+                            </div>
+                        
+                        </div>
+                        <p>From: Tuskys Greenspan</p>
+                        <p>Status: Pending</p>
+                        <div id="btnn">
+                        <button id="Cancel">Cancel Order</button>
+                        </div>
+                        
+                    </div>
+				</div>
+
+      </section>
+    </div>
+    <script src="js/cart.js"></script>
+  </body>
+</html>

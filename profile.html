@@ -1,0 +1,97 @@
+<!--<?php
+	if(!isset($_COOKIE['user'])) {
+		header('location: index.php');
+	}; 
+
+?>-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>shop</title>
+    <link rel="icon" href="Images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700|Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/get.js"></script>
+    <script src="js/test.js"></script>
+		<script>
+			$(function() {
+				$("#home").removeClass('active');
+				$("#profileIcon").addClass('active');
+			})
+		</script>
+  </head>
+  <body>
+    <div id="container">
+      <section id="header"></section>
+      <section id="body">
+        <div id="nav">
+                    <div id="home"><a href="content.php"><i class="fa fa-home"></i></a></div>
+                    <div id="savedIcon"><a><i class="fa fa-check"></i></a></div>
+                    <div id="searchIcon"><a><i class="fa fa-search"></i></a></div>
+                    <div id="ordersIcon"><a><i class="fa fa-file-text"></i></a></div>
+                    <div id="profileIcon"><a href="profile.html"><i class="fa fa-user"></i></a></div>
+										<div id="lowerIcon"><a href="logout.php"><i class="fa fa-sign-out"></i></a></div>
+        </div>
+
+				<div id="templateWrapper">
+					<div id="left">
+                    <h2>Personal Information</h2>
+                        <p>Name:   Steve Karuma</p>
+                        <p>DoB:   June 27th 1993</p>
+                        <p>Email:   stevekaruma@gmail.com</p>
+                        <p>Phone:   0728753958</p>
+                        <p>Id number:   29775996</p>
+                        <p>Joined:   Feb 2 2017</p>
+                        <p>Gender:   Male</p>
+                        <p>Address:   1385, mukoma Court Komarock</p>
+                        
+                    </div>
+					<div id="right">
+                    <h2>Change Password</h2>
+        <div id="change">
+                <div class="input">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="pass" id="pass" placeholder="Old Password" class="inputs" autocomplete="off" required>
+                </div>
+                <div class="input">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="pass" id="pass" placeholder="New Password" class="inputs" autocomplete="off" required>
+                </div>
+                <div class="input">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" name="pass" id="pass" placeholder="Confirm New Password" class="inputs" autocomplete="off" required>
+                </div>
+                        
+         </div>
+                        <h2>Send a Complaint</h2>
+        <div id="complaints">
+            <div>
+                <i class="fa fa-lock"></i>
+            <input type="text" name="name" class="inputs" placeholder="Your Name">
+            </div>
+            <div>
+                <i class="fa fa-lock"></i>
+            <input type="email" name="email" class="inputs" placeholder="Email Address">
+            </div>
+            <div>
+                <i class="fa fa-lock"></i>
+            <textarea class="inputs" id="message" placeholder="Message"></textarea>
+            </div>
+            <div>
+            <input type="submit" name="submit" class="button" value="SEND" id="contactSubmit">
+            </div>
+
+        </div>
+                    </div>
+				</div>
+
+      </section>
+    </div>
+    <script src="js/cart.js"></script>
+  </body>
+</html>
